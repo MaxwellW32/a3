@@ -1,0 +1,24 @@
+.contact {
+    padding: var(--paddingLarge);
+    display: flex;
+    gap: var(--gapExtraSmall);
+}
+
+.contact:nth-of-type(even) {
+    background-color: var(--shade3);
+}
+
+.iconCont>svg {
+    width: var(--sizeMedium);
+}
+
+.infoCont {
+    display: grid;
+    gap: var(--gapExtraSmall);
+
+}
+
+.textCont {
+    display: grid;
+    gap: var(--gapExtraSmall);
+}
