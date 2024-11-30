@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* colors */
+  --color1: var(--color1);
+  --color2: var(--color2);
+  --color3: var(--color3);
+  --color4: var(--color4);
+  --color5: var(--color5);
+  --color6: var(--color6);
+  --color7: var(--color7);
+  --shade1: var(--shade1);
+  --shade2: var(--shade2);
+  --shade3: var(--shade3);
+  --bg1: var(--bg1);
+  --bg2: var(--bg2);
+  --textColor1: #000;
+  --textColor2: #fff;
+
+  /* fonts */
+  --mediumFontSize: 1.5rem;
+  --largeFontSize: 2rem;
+
+  --mediumFontWeight: 500;
+  --boldFontWeight: 700;
+
+  /* every kbind of variable goes here: name - size naming */
+  --paddingExtraSmall: .5rem;
+  --paddingSmall: 1rem;
+  --paddingLarge: 2rem;
+  --paddingLargePlus: 3rem;
+  --paddingExtraLarge: 4rem;
+
+  --transitionSmall: 400ms;
+  --transitionRegular: 600ms;
+
+  --gapTiny: .2rem;
+  --gapExtraSmall: .5rem;
+  --gapSmall: 1rem;
+  --gapLarge: 2rem;
+  --gapExtraLarge: 5rem;
+
+  --sizeExtraSmall: .7rem;
+  --sizeSmall: 1rem;
+  --sizeMedium: 2rem;
+
+  --radiusAmountMedium: 20%;
+  --radiusAmountLarge: 50%;
+}
+
+*,
+*::before,
+*::after {
+  /* border: 1px solid red !important; */
+}
+
+/* elements */
+body {
+  background-color: var(--bg1);
+}
+
+h1 {
+  color: var(--color4);
+  text-transform: capitalize;
+  font-size: var(--largeFontSize);
+  font-weight: var(--boldFontWeight);
+}
+
+h2 {
+  text-transform: capitalize;
+  font-size: var(--mediumFontSize);
+  font-weight: var(--boldFontWeight);
+}
+
+h3 {
+  text-transform: capitalize;
+  font-weight: var(--boldFontWeight);
+}
+
+svg {
+  width: var(--sizeSmall);
+  aspect-ratio: 1/1;
+  transition: scale var(--transitionSmall);
+}
+
+svg:hover {
+  scale: 1.1;
+}
+
+section {
+  display: grid;
+  padding: var(--paddingLarge) var(--paddingLarge);
+}
+
+p {
+  max-width: 50ch;
+}
+
+/* classes */
+
+.mainButton {
+  text-transform: uppercase;
+  font-weight: var(--boldFontWeight);
+  color: var(--textColor2);
+  background-color: var(--color5);
+  padding: var(--paddingSmall) var(--paddingLarge);
+}
+
+.noScrollBar::-webkit-scrollbar {
+  display: none;
+}
+
+.snap {
+  scroll-snap-type: x mandatory;
+}
+
+.snap>* {
+  scroll-snap-align: start;
+}
+
+/* small screens */
+@media only screen and (max-width: 600px) {
+  section {
+    padding: var(--paddingSmall);
+  }
+
+}
