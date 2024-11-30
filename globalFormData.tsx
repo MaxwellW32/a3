@@ -149,7 +149,7 @@ export const globalFormData: globalFormDataType = {
       "phone": "(876)123-4567",
       "address": "123 Flavor Street, Culinary City, Foodland yeah",
       "websiteName": "YourRestaurant",
-      "websiteTitle": "YourRestaurant - Savor Every Bite yeah 124",
+      "websiteTitle": "YourRestaurant - Savor Every Bite yeah",
       "websiteDescription": "Discover mouth-watering dishes and exceptional dining experiences.",
       "logo": "https://images.pexels.com/photos/10885483/pexels-photo-10885483.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "opengraphLogo": "",
